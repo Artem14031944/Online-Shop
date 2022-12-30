@@ -1,6 +1,6 @@
 const { Sequelize } = require('sequelize');
 
-module.experts = new Sequelize(
+module.exports = new Sequelize(
     process.env.DB_NAME,
     process.env.DB_USER,
     process.env.DB_PASSWORD,
@@ -10,6 +10,3 @@ module.experts = new Sequelize(
         port: process.env.DB_PORT
     }
 );
-
-
-
